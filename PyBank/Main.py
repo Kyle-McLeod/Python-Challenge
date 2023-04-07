@@ -46,7 +46,15 @@ print("Greatest Decrease in Profits:", monthly_change_list[0])
 
 #print results to .txt file (code looks rough, but it keeps the outut looking clean)
 with open('financial_analysis.txt', 'w') as f:
-    f.write(f"Financial Analysis  --------------------        Total Months: {total_months}           Total: {total_profit_loss}           Average Change: {trunc_average_change} Greatest Increase in Profits: {monthly_change_list[-1]}                Greatest Decrease in Profits: {monthly_change_list[0]}")
+    f.write(f"Financial Analysis\n"
+            f"--------------------\n"       
+            f"Total Months: {total_months}\n"           
+            f"Total: {total_profit_loss}\n"           
+            f"Average Change: {trunc_average_change}\n" 
+            f"Greatest Increase in Profits:\n" 
+            f"{monthly_change_list[-1]}\n"          
+            f"Greatest Decrease in Profits:\n" 
+            f"{monthly_change_list[0]}")
 
 
         

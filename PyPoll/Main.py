@@ -67,5 +67,18 @@ print("--------------------------------------")
 
 #print results to .txt file (code looks roung, but spaces make the final output look cleaner)
 with open('election_results.txt', 'w') as f:
-    f.write(f'Election Results,  --------------------       Total Votes: {total_votes},  --------------------     {runners[0]}: {cand1_percent}% ({cand1_votes}),     --------------------         {runners[1]}:           {cand2_percent}% ({cand2_votes}),     --------------------      {runners[2]}:           {cand3_percent}% ({cand3_votes}),     --------------------      Winner: {winner}')
+    f.write(f"Election Results\n"  
+            f"--------------------\n"       
+            f"Total Votes: {total_votes}\n"  
+            f"--------------------\n"     
+            f"{runners[0]}:\n" 
+            f"{cand1_percent}% ({cand1_votes})\n"     
+            f"--------------------\n"         
+            f"{runners[1]}:\n"           
+            f"{cand2_percent}% ({cand2_votes})\n"     
+            f"--------------------\n"      
+            f"{runners[2]}:\n"           
+            f"{cand3_percent}% ({cand3_votes})\n"     
+            f"--------------------\n"      
+            f"Winner: {winner}\n")
 
